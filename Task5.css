@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #dfe9f3, #ffffff); /* Peaceful gradient */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .slider-container {
+    width: 420px;
+    background: #ffffffcc; /* Soft white with slight transparency */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Gentle shadow */
+    border-radius: 16px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .slider-container:hover {
+    transform: scale(1.03); /* Subtle hover effect */
+  }
+  
