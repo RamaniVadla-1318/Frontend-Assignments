@@ -1,0 +1,39 @@
+package Assignment;
+
+import java.util.*;
+
+class Employee
+{
+    int id;
+    String name;
+    double salary;
+
+    Employee(int id, String name, double salary) 
+    {
+        this.id = id;
+        this.name = name;
+        this.salary = salary;
+    }
+
+    void displayDetails()
+    {
+    	System.out.println("Employee Details are : ");
+        System.out.println("Emp ID is : " + id + ", Emp Name: " + name + ", Emp Salary: Rs." + salary);
+    }
+}
+
+public class EmployeeSystem
+{
+    public static void main(String[] args)
+    {
+        List<Employee> employees = new ArrayList<>();
+        employees.add(new Employee(101, "Ramani", 45000));
+        employees.add(new Employee(102, "Bobby", 50000));
+        employees.add(new Employee(103, "Sravani", 55000));
+
+        for (Employee emp : employees) 
+        {
+            emp.displayDetails();
+        }
+    }
+}
